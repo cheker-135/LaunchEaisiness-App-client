@@ -1,0 +1,210 @@
+.service-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  width: 25em;
+  /* height: 22em; */
+  padding: 2em;
+  border-radius: 15px;
+  border: 2px solid var(--primary-color);
+  margin-inline: 1em;
+}
+.service-card img {
+  width: 22em;
+}
+.service-card .content {
+  display: flex;
+  flex-direction: column;
+  width: 22em;
+}
+.service-card p {
+  color: #000;
+}
+
+.service-card a {
+  width: 5em;
+}
+.team-cards-container {
+  display: flex;
+  justify-content: space-between; /* Adjust as needed */
+  gap: 20px; /* Space between cards */
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  margin-bottom: 5em;
+}
+
+.team-card {
+  position: relative;
+  overflow: hidden;
+  width: 30%; /* Adjust width as needed */
+}
+
+.team-card img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.team-card h3 {
+}
+.team-card p {
+  width: 100%;
+}
+.gradient-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(
+    to top,
+    var(--primary-color),
+    rgba(0, 0, 0, 0)
+  ); /* Gradient from black to transparent */
+  color: white;
+  padding: 10px; /* Adjust padding as needed */
+  text-align: center; /* Center the text */
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+/* body {
+  background-color: black;
+} */
+.container {
+  width: 30em;
+  padding: 0 !important;
+}
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+  .container {
+    max-width: 1279px !important;
+    padding: 0 !important;
+    margin: 0 80px !important;
+    width: auto !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  .container {
+    max-width: 959px !important;
+    margin: 0 16px !important;
+    padding: 0 !important;
+    width: auto !important;
+  }
+}
+/* .gradient-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  padding: 30px;
+} */
+/* @media screen and (max-width: 991px) {
+  .gradient-cards {
+    grid-template-columns: 1fr;
+  }
+} */
+.container-title {
+  text-align: center;
+  padding: 0 !important;
+  margin-bottom: 40px;
+  font-size: 40px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 60px;
+}
+/* .card {
+  max-width: 550px;
+  border: 0;
+  width: 100%;
+  margin-inline: auto;
+} */
+.container-card {
+  position: relative;
+  border: 2px solid transparent;
+  background: linear-gradient(71deg, #080509, #1a171c, #080509);
+  background-clip: padding-box;
+  border-radius: 45px;
+  padding: 1.5em;
+  margin-block: 1em;
+}
+.container-card img {
+  margin-bottom: 0em;
+  width: 5em;
+}
+.bg-green-box,
+.bg-white-box,
+.bg-yellow-box,
+.bg-blue-box {
+  position: relative;
+}
+.bg-green-box::after,
+.bg-white-box::after,
+.bg-yellow-box::after,
+.bg-blue-box::after {
+  position: absolute;
+  top: -5px;
+  bottom: -5px;
+  left: -5px;
+  right: -5px;
+  content: "";
+  z-index: -1;
+  border-radius: 45px;
+}
+.bg-green-box::after {
+  background: linear-gradient(71deg, #0d1212, #3da077, #0d1212);
+}
+.bg-white-box::after {
+  background: linear-gradient(71deg, #121013, #b0afb0, #121013);
+}
+.bg-yellow-box::after {
+  background: linear-gradient(71deg, #110e0e, #afa220, #110e0e);
+}
+.bg-blue-box::after {
+  background: linear-gradient(71deg, #0c0a0e, #5f6fad, #0c0a0e);
+}
+.card-title {
+  font-weight: 600;
+  color: white;
+  letter-spacing: -0.02em;
+  line-height: 40px;
+  font-style: normal;
+  font-size: 28px;
+  padding-bottom: 8px;
+  margin-bottom: 0;
+}
+.card-description {
+  font-weight: 600;
+  line-height: 32px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 16px;
+  max-width: 470px;
+}
+.service-simple {
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  width: 35vw;
+  box-shadow: 4px 4px 8px #555;
+  border-radius: 15px;
+  /* justify-content: space-between; */
+  overflow: hidden;
+}
+.service-simple img {
+  height: 100%;
+}
+.service-simple .content {
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80%;
+}
+.service-simple h2 {
+  margin: 0;
+}
+.service-simple p {
+  color: var(--text-color);
+}
+.service-simple a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--primary-color);
+}

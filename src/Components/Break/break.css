@@ -1,0 +1,31 @@
+.break-container {
+  background: url(../../Assest/images/break.png);
+
+  width: 95%;
+  height: 22em;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 2em;
+  margin-block: 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.break-container .content {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.break-container h3 {
+  color: #fff;
+  font-size: 2rem;
+}
+.break-container p {
+}
+.break-container a {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  width: 5em;
+}
