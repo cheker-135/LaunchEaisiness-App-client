@@ -1,70 +1,134 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Online Business Creation Platform
 
-## Available Scripts
+## Overview
+This project is a MERN stack-based platform designed to simplify the process of online business creation in Tunisia and Mauritania, targeting clients from Europe. The platform provides users with the ability to schedule appointments, pay for services, and explore additional features such as tenders in Tunisia. It is built with a focus on user-friendliness, responsiveness, and efficient service delivery.
 
-In the project directory, you can run:
+## Features
+### Core Features
+- **Business Creation Services:**
+  - Schedule appointments for business creation services.
+  - Input essential details such as business name, location, and amount.
+- **Payment Integration:**
+  - Make secure payments using PayPal or Stripe.
 
-### `npm start`
+### Additional Features (Future Enhancements)
+- **Tenders in Tunisia:**
+  - Explore and access tenders ("appels d'offre") available in Tunisia.
+  - Monthly subscription plans to download tender details.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tech Stack
+### Frontend
+- **React:** Component-based framework for building the user interface.
+- **Redux:** State management for maintaining global application state.
+- **Bootstrap:** Framework for responsive and mobile-first design.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Backend
+- **Node.js:** JavaScript runtime for backend development.
+- **Express.js:** Web application framework for APIs and routing.
 
-### `npm test`
+### Database
+- **MongoDB:** NoSQL database for storing user data, appointments, and payments.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Payment Integration
+- **PayPal and Stripe:** Secure payment gateways for processing transactions.
 
-### `npm run build`
+## Installation
+### Prerequisites
+- Node.js (v18 or higher recommended)
+- MongoDB (local or cloud instance)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Steps
+1. **Clone the Repository:**
+   ```bash
+   git clone repo
+   cd repo
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Install Dependencies:**
+   - Backend:
+     ```bash
+     cd backend
+     npm install
+     ```
+   - Frontend:
+     ```bash
+     cd frontend
+     npm install
+     ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Set Up Environment Variables:**
+   Create a `.env` file in the backend directory with the following:
+   ```env
+   MONGO_URI=your_mongodb_connection_string
+   JWT_SECRET=your_jwt_secret
+   PAYPAL_CLIENT_ID=your_paypal_client_id
+   STRIPE_SECRET_KEY=your_stripe_secret_key
+   ```
 
-### `npm run eject`
+4. **Start the Application:**
+   - Backend:
+     ```bash
+     cd backend
+     npm start
+     ```
+   - Frontend:
+     ```bash
+     cd frontend
+     npm start
+     ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+5. **Access the Application:**
+   Open your browser and navigate to `http://localhost:3000`.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Folder Structure
+```plaintext
+online-business-creation/
+├── backend/
+│   ├── controllers/
+│   ├── config/
+│   ├── models/
+│   ├── routes/
+│   ├── utils/
+│   └── server.js
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── redux/
+│   │   ├── App.js
+│   │   └── index.js
+│   └── public/
+└── README.md
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Future Roadmap
+- Implement a subscription model for accessing tenders in Tunisia.
+- Add advanced filtering options for tenders.
+- Support multi-language functionality for a better user experience.
+- Enable detailed reporting and analytics for admins.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Contributing
+Contributions are welcome! Please follow these steps:
+1. Fork the repository.
+2. Create a new branch:
+   ```bash
+   git checkout -b feature-name
+   ```
+3. Commit your changes:
+   ```bash
+   git commit -m "Add feature description"
+   ```
+4. Push to the branch:
+   ```bash
+   git push origin feature-name
+   ```
+5. Open a pull request.
 
-## Learn More
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contact
+For any inquiries or support, please contact [chykou87@gmail.com].
+Happy coding !!
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
